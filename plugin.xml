@@ -1,0 +1,16 @@
+<plugin>
+	<nom>Larma</nom>
+	<auteur>[Joseph->http://contrib.spip.net/Joseph]</auteur>
+	<version>1.0.0</version>
+	<licence>Creative Commons Attribution 2.5</licence>
+	<slogan>Un th&#232;me responsive</slogan>
+	<description>Th&#232;me Z responsive monochrome</description>
+	<lien>https://github.com/larmarange/larma</lien>
+	<icon>vignette.jpg</icon>
+	<etat>test</etat>
+	<prefix>theme_larma</prefix>
+	<necessite id="SPIP" version="[2.0.10;3.0.99]" />
+	<utilise id="Z" version="[1.7.0;1.9.*]" />
+	<bandeau>images/header-photo.jpg</bandeau>
+	<categorie>theme</categorie>
+</plugin>

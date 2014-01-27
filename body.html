@@ -1,0 +1,47 @@
+<div id="header">
+	<div id="entete">
+		<INCLURE{fond=inclure/entete,env}>
+		<br style="clear: both;"/>
+	</div>
+	<div id="barrenav">
+		<label for="toggle-barrenav" title="<:theme_larma:afficher_menu:>" role="navigation" onclick="" id="label-toggle-barrenav"></label>
+		<input type="checkbox" id="toggle-barrenav">
+		<div id="toggle-div">
+			<INCLURE{fond=inclure/barre-nav,env}>
+		</div>
+		<br style="clear: both;"/>
+	</div>
+</div>
+
+<div id="content">
+	<div id="contenu">
+		<INCLURE{fond=contenu/#ENV{type},env}>
+	</div>
+
+	<div id="side">
+		<div id="navigation">
+			<INCLURE{fond=navigation/#ENV{type},env}>
+		</div>
+		<div id="extra">
+			<INCLURE{fond=extra/#ENV{type},env}>
+		</div>
+	</div>
+	<div id="retour_haut">
+		<a href="#" title="<:theme_larma:retour_haut_page:>"><img src="#CHEMIN{img/arrow.png}" alt="<:theme_larma:retour_haut_page:>"></a>
+	</div>
+	<div id="pied">
+		<INCLURE{fond=inclure/pied,env}>
+		<INCLURE{fond=inc-theme-copyleft}>
+	</div>
+</div>
+<script src="#CHEMIN{js/hoverIntent.js}" type="text/javascript" ></script> 
+<script src="#CHEMIN{js/superfish.js}" type="text/javascript"></script> 
+<script type="text/javascript">/* <![CDATA[ */
+    jQuery(document).ready(function(){ 
+        jQuery("#barrenav div.menu-conteneur > ul.menu-liste").superfish(); 
+        jQuery("#formulaire_recherche").prependTo("#toggle-div");
+        jQuery("#formulaire_recherche input#recherche").attr('placeholder',"<:info_rechercher:>");
+        jQuery(".noisette_formulaire_recherche").remove();
+        jQuery("#formulaire_menu_lang").prependTo("#toggle-div");
+    }); 
+/* ]]> */</script>

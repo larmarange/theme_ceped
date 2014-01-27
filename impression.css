@@ -1,0 +1,19 @@
+/* On importe les CSS pour l'écran qu'on surechargera ensuite */
+@import url(habillage.css);
+
+/* Respecter les CSS */
+* {-webkit-print-color-adjust: exact;}
+
+/* Eléments à ne pas imprimer */
+#spip-admin, #barrenav, #pied, .comment-reply, .repondre, .modererforum {display:none;}
+
+/* Layout */
+#header {position: relative; width:100%;}
+#entete img {float: left; max-height: 75px; width: auto; max-width: none; padding: 5px;}
+#content, #side {margin-left: 0; width:100%; display: block;}
+#contenu {padding: 0 10px}
+#retour_haut {width: 100%; margin: 10px 0 0 0;}
+
+/* On réduit la colonne latérale et les forums */
+#side, .comments {font-size: 80%;}
+.comment-meta .spip_logos {max-height: 30px; width: auto; margin: 0 25px;}

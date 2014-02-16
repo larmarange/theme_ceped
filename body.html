@@ -1,3 +1,4 @@
+<div class="nojs">
 <div id="header">
 	<div id="entete">
 		<INCLURE{fond=inclure/entete,env}>
@@ -41,9 +42,11 @@
 <script src="#CHEMIN{js/superfish.js}" type="text/javascript"></script> 
 <script type="text/javascript">/* <![CDATA[ */
     jQuery(document).ready(function(){ 
-        jQuery("#barrenav div.menu-conteneur > ul.menu-liste").superfish(); 
+		jQuery(".nojs").removeClass("nojs");
+        jQuery("#barrenav div.menu-conteneur > ul.menu-liste").superfish({delay:800}); 
         jQuery("#formulaire_recherche input#recherche").attr('placeholder',"<:info_rechercher:>");
         jQuery("#formulaire_menu_lang").prependTo("#toggle-div");
 		if (jQuery("#extra_content div").length==0) jQuery("#extra").remove();
     }); 
 /* ]]> */</script>
+</div>

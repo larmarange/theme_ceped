@@ -130,17 +130,17 @@ img {
 
 
 /* Polices de caracteres */
-h1, h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip
+h1, h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip, .page_plan #content div.menu > ul > li > a
 	{font-family: 'Exo 2', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;}
 body {font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;}
 code, .spip_code, .spip_cadre, kbd, samp, var
 	{font-family: "Source Code Pro", "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;}
 
-/* Couleurs http://www.colourlovers.com/palette/3222230/collection */
+/* Couleurs */
 #header, #content .formulaire_spip input.submit, #content .modererforum button.submit, .comment:hover > .modererforum,
 #content .calendriermini .ui-state-highlight a
 	{background-color: #a92973;} 
-h1, .h1, h3 a, #barrenav a
+h1, .h1, h3 a, #barrenav a, #extra a
 	{color: #a92973;}
 a, p.soustitre, a.spip_in, a.spip_out, a.spip_url, a.spip_glossaire,
 code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu legend
@@ -170,6 +170,13 @@ textarea:focus {
   -webkit-box-shadow: #36a786 0 0 10px 0;
   -moz-box-shadow: #36a786 0 0 10px 0;
   box-shadow: #36a786 0 0 10px 0;
+  z-index: 1;
+}
+
+input.submit:focus {
+  -webkit-box-shadow: #a92973 0 0 10px 0;
+  -moz-box-shadow: #a92973 0 0 10px 0;
+  box-shadow: #a92973 0 0 10px 0;
   z-index: 1;
 }
 
@@ -203,8 +210,8 @@ body {margin: 0; padding: 0; text-align: justify; background-color: #FFF;}
 
 #header {position: relative; width:100%;}
 #content {margin: 0; width:100%;}
-#contenu {display: table-cell; padding: 0 10px; width: 800px; max-width:800px;}
-#side {display: table-cell; width: 250px; padding: 0 10px 0 10px;}
+#contenu {display: table-cell; padding: 0 10px; width: 800px; max-width:800px; vertical-align:top;}
+#side {display: table-cell; width: 250px; padding: 20px 10px 0 10px; vertical-align:top;}
 #retour_haut {width: 100%; margin: 10px 0 20px 0;}
 #extra, #footer {margin:0;}
 #extra {border-top-style: solid; border-top-width: 1px;}
@@ -347,6 +354,7 @@ a:hover {text-decoration: underline;}
 @media only screen and  (min-width: 850px) {
 	#formulaire_menu_lang {text-align: right; width: 1000px; max-width: 100%; margin: 0 auto; position:absolute;}
 	#formulaire_menu_lang select {display: inline-block; width: 180px; position:relative; top:-30px;}
+	#formulaire_menu_lang p.boutons {display:inline-block; position: relative; top:-30px;}
 	#formulaire_recherche {width: 1000px; max-width: 100%; margin: 0 auto; position:absolute; text-align:right;}
 	#formulaire_recherche input {border-bottom: none; display: inline-block; width:180px;}
 	#barrenav div.menu-conteneur {margin-right: 200px;}
@@ -372,9 +380,10 @@ a:hover {text-decoration: underline;}
 		-moz-border-radius-topright: 5px;
 		border-top-right-radius: 5px;
 	}
-	#barrenav div.menu-conteneur > ul.menu-liste > li > a {padding: 5px 20px;}
-	#barrenav div.menu-conteneur > ul.menu-liste > li > ul {display: none;}
-	#barrenav div.menu-conteneur > ul.menu-liste > li:hover > ul {display: block; position: absolute;}
+	#barrenav div.menu-conteneur > ul.menu-liste > li > a {padding: 5px 10px;}
+	.nojs #barrenav div.menu-conteneur {position:relative; z-index:9999;}
+	.nojs #barrenav div.menu-conteneur > ul.menu-liste > li > ul {display: none;}
+	.nojs #barrenav div.menu-conteneur > ul.menu-liste > li:hover > ul {display: block; position: absolute;}
 	#barrenav div.menu-conteneur > ul.menu-liste > li > ul > li {
 		border-bottom-style: solid; border-bottom-width: 1px;
 		border-left-style: solid; border-left-width: 1px;
@@ -384,10 +393,10 @@ a:hover {text-decoration: underline;}
 	#barrenav div.menu-conteneur > ul.menu-liste > li > ul > li:first-child {
 		border-top-style: solid; border-top-width: 1px;
 	}
-	#barrenav div.menu-conteneur > ul.menu-liste li ul a {padding: 5px 20px 5px 20px;}
-	#barrenav div.menu-conteneur > ul.menu-liste li ul ul a {padding: 5px 20px 5px 40px;}
-	#barrenav div.menu-conteneur > ul.menu-liste li ul ul ul a {padding: 5px 20px 5px 60px;}
-	#barrenav div.menu-conteneur > ul.menu-liste li ul ul ul ul a {padding: 20px 15px 5px 80px;}
+	#barrenav div.menu-conteneur > ul.menu-liste li ul a {padding: 5px 10px 5px 10px;}
+	#barrenav div.menu-conteneur > ul.menu-liste li ul ul a {padding: 5px 10px 5px 10px;}
+	#barrenav div.menu-conteneur > ul.menu-liste li ul ul ul a {padding: 5px 10px 5px 10px;}
+	#barrenav div.menu-conteneur > ul.menu-liste li ul ul ul ul a {padding: 5px 10px 5px 10px;}
 
 	#barrenav div.menu-conteneur > ul.sf-js-enabled > li {width:auto; height: 30px;}
 	#barrenav div.menu-conteneur > ul.sf-js-enabled > li > a > .sf-sub-indicator {
@@ -395,9 +404,9 @@ a:hover {text-decoration: underline;}
 		-moz-transform: rotate(90deg);
 		-o-transform: rotate(90deg);
 		transform: rotate(90deg);
-		margin-right: -30px;
+		margin-right: -20px;
 	}
-	#barrenav div.menu-conteneur > ul.menu-liste > li > a.sf-with-ul {padding-right: 40px;}
+	#barrenav div.menu-conteneur > ul.menu-liste > li > a.sf-with-ul {padding-right: 30px;}
 	#barrenav div.menu-conteneur > ul.sf-js-enabled > li.sfHover > ul {
 		left: 0;
 		top: 30px;
@@ -420,9 +429,58 @@ a:hover {text-decoration: underline;}
 	#barrenav #toggle-div {display: none;}
 }
 
+ul.menu-liste .menu-address > a:before { content: '\e805'; }
+ul.menu-liste .menu-group > a:before { content: '\e803'; }
+ul.menu-liste .menu-beaker > a:before { content: '\e808'; }
+ul.menu-liste .menu-book> a:before { content: '\e80e'; }
+ul.menu-liste .menu-graduation-cap > a:before { content: '\e806'; }
+ul.menu-liste .menu-phone-squared > a:before { content: '\e820'; }
+ul.menu-liste .menu-calendar > a:before { content: '\e80f'; }
+ul.menu-liste .menu-rss-alt > a:before { content: '\e802'; }
+ul.menu-liste .menu-mail-alt > a:before { content: '\e81a'; }
+ul.menu-liste .menu-folder-open > a:before { content: '\e81c'; }
+ul.menu-liste .menu-location > a:before { content: '\e812'; }
+ul.menu-liste .menu-gplus > a:before { content: '\e80a'; }
+ul.menu-liste .menu-youtube > a:before { content: '\e809'; }
+ul.menu-liste .menu-info-circled > a:before { content: '\e801'; }
+ul.menu-liste .menu-info > a:before { content: '\e807'; }
+ul.menu-liste .menu-megaphone > a:before { content: '\e811'; }
+ul.menu-liste .menu-rss > a:before { content: '\e823'; }
+
+ul.menu-liste [class^="menu-"] > a:before, ul.menu-liste  [class*=" menu-"] > a:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .5em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
 /* Contenu */
 h1, .h1 {font-size: 4em; font-weight: normal; margin: 10px 0; text-align: left; line-height: 110%;}
-h2, .h2 {font-weight: normal; text-align: left;}
+h2, .h2 {font-weight: normal; text-align: left; line-height: 1.2em;}
 h3, .h3 {font-size: 1.5em; font-weight: normal; text-align: left;}
 #side li.item h3, #side li.item .h3 {font-size: 1.25em;}
 
@@ -439,7 +497,7 @@ img.spip_logos {float: right; background-color: white; padding: 10px; border: so
 .contenu-principal img.spip_logos {padding: 0; border: none; margin-left: 25px;}
 .contenu-principal > div {clear: both;}
 
-p#hierarchie {margin: 10px 0; color: #BBB;}
+p#hierarchie {margin: 10px 0; color: #BBB; text-align:left;}
 p#hierarchie a {color: #BBB;}
 
 p.surtitre {margin: 10px 0; font-weight: bold;}
@@ -453,7 +511,8 @@ p.soustitre {margin: 10px 0; font-style: italic; font-size: 1.15em; text-align: 
 
 /* Spip Styles */
 
-abbr[title], acronym[title], dfn[title] {border-bottom: dotted 1px;}
+/* abbr[title], acronym[title], dfn[title] {border-bottom: dotted 1px;} */
+acronym[title], dfn[title] {border-bottom: dotted 1px;}
 abbr.dtreviewed {border:none;}
 a[hreflang]:after{content: " ("attr(hreflang)")";}
 a[href^="mailto:"]:after {content: url(img/mail_link.gif);}
@@ -492,7 +551,7 @@ table.spip td { vertical-align: top; }
 #content ul.liste-items {list-style-type: none; padding:0; text-align: left;}
 #content li.item {padding: 5px 0; clear: both;}
 #content ul.liste-noisettes li.noisette {padding-left: 30px;} /* Pour le noizetier, voir=noisettes */
-#content li.item h3 {margin-bottom: 5px; padding-top: 10px; margin-top: 10px; border-top: #EEE solid 1px; line-height: 1.5em;}
+#content li.item h3, #content li.item h2 {margin-bottom: 5px; padding-top: 10px; margin-top: 10px; border-top: #EEE solid 1px; line-height: 1.5em;}
 #content li.item:first-child h3 {border-top: none; margin-top: 0; padding-top: 10px;}
 #content li.item .info-publi {font-size: 90%; margin-bottom: 10px;}
 #content li.item .entry-content {text-align: justify;}
@@ -569,10 +628,14 @@ p.comment-reply {text-align: right; margin-top: 20px;}
 
 #retour_haut {text-align: right;}
 #extra {padding: 20px 5px;}
-#extra_content > div {display: table-cell; width:250px;}
+#extra div.menu ul {padding-left: 0; list-style:none;}
+#extra_content > div {display: table-cell; width:250px; padding-right:20px; text-align:left;}
 #pied {padding: 20px 5px;}
+.formulaire_newsletter p.boutons {text-align:left;}
+.formulaire_newsletter p.boutons input {margin: 2px;}
+.formulaire_newsletter li.editer_session_email {padding-top:0;}
 
-/* Page mots-cl�s */
+/* Page mots-clés */
 
 body.page_mots #content div.noisette_liste_mots_cles li.item {display:block; width: 33%; height:4.5em; float:left; clear:none; padding-right:5px;}
 body.page_mots #content div.noisette_liste_mots_cles li.item[float="left"] + li.item {float:none;}
@@ -591,7 +654,6 @@ body.page_mot .info-publi a {color:#000;}
 }
 
 /* Carroussel Actus */
-
 #carroussel {
 	border-style: solid; border-width: 1px;
 	-webkit-border-radius: 5px;
@@ -614,16 +676,62 @@ span.cycle-pager-active {color: #666;}
 
 /* Rendez-vous */
 
-#rdv div.un_rdv {display:table-cell; width:25%; text-align:left; border-style: solid; border-width: 1px; border-top: none; border-right: none;}
+.rdv+.rdv {margin-top: 20px;}
+.rdv div.un_rdv {display:table-cell; width:25%; text-align:left; border-style: solid; border-width: 1px; border-top: none; border-right: none;}
 .rdv_date {padding: 3px 10px; font-size: 1.5em; display:inline-block; color: black;}
 .rdv_jour {font-weight: bold;}
 .rdv_mois {font-size: .7em;}
 .rdv_infos{padding: 10px 20px 10px 10px;}
 .rdv_type, .rdv_heure {color: black; font-size: .85em;}
-#rdv a:hover {text-decoration: none;}
+.rdv a:hover {text-decoration: none;}
 .all-evts {text-align: right; padding: 10px 0 10px 0; font-size:0.9em;}
+
+/* Agenda */
+.page_evenement .contenu-principal .surtitre {font-size: 2em;}
+
+/* Mots-clés des articles */
+
+#side .noisette_article-mots_cles li a:before { 
+	content: '\e814';
+	  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+}
+
+/* Plan du site */
+
+.page_plan #content div.menu > ul {list-style:none; padding-left:0;}
+.page_plan #content div.menu > ul > li > a {font-size: 1.7143em; color:black; line-height: 3em;}
 
 /* Styles pour noisette */
 .img_no_border img.spip_logos {border: none;}
+.img_no_border dt span {display: inline-block; padding: 0 20px;}
+
+ul.liste_3col {padding-left:0;}
+ul.liste_3col li {display:block; width: 33%; height:3em; float:left; clear:none; padding-right:10px; text-align: left;}
+ul.liste_3col li[float="left"] + li {float:none;}
+@media only screen and  (max-width: 700px) {
+	ul.liste_3col li {width: 49%;}
+}
+
 /*.lien_titre_invisible   voir  couleurs */
 #extra_content > div.display_block {display:block; width:auto;}

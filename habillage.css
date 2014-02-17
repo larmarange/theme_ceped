@@ -500,8 +500,8 @@ img.spip_logos {float: right; background-color: white; padding: 10px; border: so
 p#hierarchie {margin: 10px 0; color: #BBB; text-align:left;}
 p#hierarchie a {color: #BBB;}
 
-p.surtitre {margin: 10px 0; font-weight: bold;}
-p.soustitre {margin: 10px 0; font-style: italic; font-size: 1.15em; text-align: right;}
+p.surtitre {margin: 10px 0; font-weight: bold; font-size: 1.5em;}
+p.soustitre {margin: 10px 0; font-style: italic; font-size: 1.5em;}
 
 .chapo p, .ps p, #descriptif_site_spip {font-weight: bold; color: #666;}
 .notes div {padding-left: 30px;  text-align: justify;}

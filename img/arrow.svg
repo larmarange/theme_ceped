@@ -34,12 +34,12 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1600"
-   inkscape:window-height="847"
+   inkscape:window-width="1792"
+   inkscape:window-height="715"
    id="namedview11"
    showgrid="false"
    inkscape:zoom="4.9166667"
-   inkscape:cx="-45.966102"
+   inkscape:cx="-80.949153"
    inkscape:cy="24"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
@@ -50,16 +50,16 @@
 <g
    id="g3004"
    transform="matrix(0,-1,1,0,0,48.15625)"
-   style="fill:#a92973;fill-opacity:1"><path
+   style="fill:#ae0107;fill-opacity:1"><path
      id="path3"
      d="M 24.09375,0.125 C 10.88575,0.125 0.125,10.88775 0.125,24.09375 c 0,13.208 10.76075,23.9375 23.96875,23.9375 13.206,0 23.9375,-10.7295 23.9375,-23.9375 0,-13.206 -10.7295,-23.96875 -23.9375,-23.96875 z m 0,3 c 11.556,0 20.96875,9.40975 20.96875,20.96875 0,11.559 -9.41175,20.96875 -20.96875,20.96875 C 12.53475,45.0625 3.125,35.65075 3.125,24.09375 3.125,12.53575 12.53575,3.125 24.09375,3.125 z"
      inkscape:connector-curvature="0"
-     style="fill:#a92973;fill-opacity:1" /><g
+     style="fill:#ae0107;fill-opacity:1" /><g
      id="g7"
-     style="fill:#a92973;fill-opacity:1">
+     style="fill:#ae0107;fill-opacity:1">
 	<polygon
    id="polygon9"
    points="16.659,12.983 21.641,17.685 21.641,17.677 28.44,24.093 21.641,30.51 21.641,30.451 16.604,35.201 23.778,35.201 35.579,24.067 23.83,12.983 "
-   style="fill:#a92973;fill-opacity:1" />
+   style="fill:#ae0107;fill-opacity:1" />
 </g></g>
 </svg>

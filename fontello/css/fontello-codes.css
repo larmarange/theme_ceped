@@ -20,6 +20,7 @@
 .icon-home:before { content: '\e800'; } /* '' */
 .icon-logout:before { content: '\e81d'; } /* '' */
 .icon-book:before { content: '\e80e'; } /* '' */
+.icon-chart-bar:before { content: '\e824'; } /* '' */
 .icon-megaphone:before { content: '\e811'; } /* '' */
 .icon-beaker:before { content: '\e808'; } /* '' */
 .icon-hammer:before { content: '\e822'; } /* '' */

@@ -139,9 +139,9 @@ code, .spip_code, .spip_cadre, kbd, samp, var
 /* Couleurs */
 #header, #content .formulaire_spip input.submit, #content .modererforum button.submit, .comment:hover > .modererforum,
 #content .calendriermini .ui-state-highlight a
-	{background-color: #a92973;} 
+	{background-color: #ae0107;} 
 h1, .h1, h3 a, #barrenav a, #extra a
-	{color: #a92973;}
+	{color: #ae0107;}
 a, p.soustitre, a.spip_in, a.spip_out, a.spip_url, a.spip_glossaire,
 code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu legend
 	{color: #73A3A5;}
@@ -151,8 +151,8 @@ code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu
 #content .modererforum button.submit, .formulaire_spip fieldset.previsu, 
 #content .calendriermini .ui-state-highlight a, #content .ui-state-highlight, 
 #content .ui-widget-content .ui-state-highlight, #content .ui-widget-header .ui-state-highlight
-	{border-color: #a92973;}
-table.spip th, table.spip td {border: 1px solid #a92973;}
+	{border-color: #ae0107;}
+table.spip th, table.spip td {border: 1px solid #ae0107;}
 
 #barrenav li:hover, li.sfHover, table.spip tr.row_first, #content p.pagination a:hover,
 #content p.pagination strong, #content .formulaire_spip input.submit:hover,
@@ -167,16 +167,16 @@ button:focus,
 a.button:focus,
 select:focus,
 textarea:focus {
-  -webkit-box-shadow: #36a786 0 0 10px 0;
-  -moz-box-shadow: #36a786 0 0 10px 0;
-  box-shadow: #36a786 0 0 10px 0;
+  -webkit-box-shadow: #73A3A5 0 0 10px 0;
+  -moz-box-shadow: #73A3A5 0 0 10px 0;
+  box-shadow: #73A3A5 0 0 10px 0;
   z-index: 1;
 }
 
 input.submit:focus {
-  -webkit-box-shadow: #a92973 0 0 10px 0;
-  -moz-box-shadow: #a92973 0 0 10px 0;
-  box-shadow: #a92973 0 0 10px 0;
+  -webkit-box-shadow: #ae0107 0 0 10px 0;
+  -moz-box-shadow: #ae0107 0 0 10px 0;
+  box-shadow: #ae0107 0 0 10px 0;
   z-index: 1;
 }
 
@@ -194,7 +194,7 @@ input.submit:focus {
 #nom_site_spip a {color: #FFF; text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);}
 #slogan_site_spip, #pied, #pied a {color: #FFF;}
 
-#header, #footer {background: url(img/Elegant_Background-21.jpg) center top -150px;}
+#header, #footer {background: url(img/ceped_background.jpg) center top -150px;}
 #extra, #carroussel,.rdv_date {background-color: #EEE;}
 #extra, #carroussel, .un_rdv {border-color: #DDD;}
 
@@ -233,7 +233,7 @@ a:hover {text-decoration: underline;}
 
 #entete {padding: 5px 10px 0 10px; text-align: left;}
 #entete img {padding: 0px; background-color: transparent; border: none; margin: 0 15px 0 0; float: left; max-width: 150px; height: auto;}
-#nom_site_spip {font-size: 4em; font-weight: bold; display: block; margin-left: 115px;}
+#nom_site_spip {font-size: 4em; font-weight: normal; display: block; margin-left: 115px;}
 #nom_site_spip a {text-decoration: none; border: none;}
 #slogan_site_spip {font-size: 1.1em; margin-left: 115px;}
 
@@ -627,7 +627,7 @@ p.comment-reply {text-align: right; margin-top: 20px;}
 
 /* Pied de page */
 
-#retour_haut {text-align: right;}
+#retour_haut {text-align: right; padding-right:10px;}
 #extra {padding: 20px 5px;}
 #extra div.menu ul {padding-left: 0; list-style:none;}
 #extra_content > div {display: table-cell; width:250px; padding-right:20px; text-align:left;}
@@ -635,6 +635,10 @@ p.comment-reply {text-align: right; margin-top: 20px;}
 .formulaire_newsletter p.boutons {text-align:left;}
 .formulaire_newsletter p.boutons input {margin: 2px;}
 .formulaire_newsletter li.editer_session_email {padding-top:0;}
+@media only screen and (max-width: 750px) {
+	#extra_content > div  {display: block; width:100%; max-width:100%;}
+}
+
 
 /* Page mots-clés */
 
@@ -675,6 +679,11 @@ span.cycle-pager-active {color: #666;}
 .all-news {text-align: right; padding: 0 10px 10px 0; font-size:0.9em;}
 #carroussel a:hover {text-decoration: none;}
 
+@media only screen and (max-width: 400px) {
+	#carroussel > div.cycle-slideshow > div > div {display: block; width:100%; max-width:100%;}
+}
+
+
 /* Rendez-vous */
 
 .rdv+.rdv {margin-top: 20px;}
@@ -686,6 +695,10 @@ span.cycle-pager-active {color: #666;}
 .rdv_type, .rdv_heure {color: black; font-size: .85em;}
 .rdv a:hover {text-decoration: none;}
 .all-evts {text-align: right; padding: 10px 0 10px 0; font-size:0.9em;}
+
+@media only screen and (max-width: 500px) {
+	.rdv div.un_rdv {display: block; width:100%;}
+}
 
 /* Agenda */
 .page_evenement .contenu-principal .surtitre {font-size: 2em;}
@@ -727,7 +740,7 @@ span.cycle-pager-active {color: #666;}
 .img_no_border img.spip_logos {border: none;}
 .img_no_border dt span {display: inline-block; padding: 0 20px;}
 
-ul.liste_3col {padding-left:0;}
+ul.liste_3col, ul.liste_type_none {padding-left:0; list-style: none;}
 ul.liste_3col li {display:block; width: 33%; height:3em; float:left; clear:none; padding-right:10px; text-align: left;}
 ul.liste_3col li[float="left"] + li {float:none;}
 @media only screen and  (max-width: 700px) {

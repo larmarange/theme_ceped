@@ -130,7 +130,7 @@ img {
 
 
 /* Polices de caracteres */
-h1, h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip, .page_plan #content div.menu > ul > li > a
+h1, h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip, .page_plan #content div.menu > ul > li > a, .carroussel_rub
 	{font-family: 'Exo 2', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;}
 body {font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;}
 code, .spip_code, .spip_cadre, kbd, samp, var
@@ -159,6 +159,10 @@ table.spip th, table.spip td {border: 1px solid #ae0107;}
 #content .modererforum button.submit:hover, .me > .comment > .comment-content,
 #content .calendriermini .ui-state-highlight a:hover
 	{background-color: #f8e3ef;}
+
+#contenu h3.spip {
+	background-color: #73A3A5;
+}
 
 .info-publi {color: #A98D76;}
 
@@ -208,6 +212,7 @@ table.spip tr.row_even { background: #EEE; }
 
 body {margin: 0; padding: 0; text-align: justify; background-color: #FFF;}
 
+#bandeau {width:100%; height:75px; background-image: url('img/bandeau_ceped_75.jpg'); background-position: center center;}
 #header {position: relative; width:100%;}
 #content {margin: 0; width:100%;}
 #contenu {display: table-cell; padding: 0 10px; width: 800px; max-width:800px; vertical-align:top;}
@@ -232,8 +237,8 @@ a:hover {text-decoration: underline;}
 /* Header */
 
 #entete {padding: 5px 10px 0 10px; text-align: left;}
-#entete img {padding: 0px; background-color: transparent; border: none; margin: 0 15px 0 0; float: left; max-width: 150px; height: auto;}
-#nom_site_spip {font-size: 4em; font-weight: normal; display: block; margin-left: 115px;}
+#entete img {padding: 0px; background-color: transparent; border: none; margin: 10px 15px 5px 0; float: left; max-width: 150px; height: auto;}
+#nom_site_spip {font-size: 3.5em; font-weight: normal; display: block; margin-left: 115px;}
 #nom_site_spip a {text-decoration: none; border: none;}
 #slogan_site_spip {font-size: 1.1em; margin-left: 115px;}
 
@@ -244,6 +249,7 @@ a:hover {text-decoration: underline;}
 #barrenav {clear: both;}
 
 @media only screen and  (max-width: 550px) {
+	#bandeau {display: none;}
 	#entete {text-align:center;}
 	#entete img {float: none; max-width: 100px; height: auto; max-height: none;}
 	.contenu-principal .cartouche .spip_logos {max-width: 25%;}
@@ -484,6 +490,22 @@ h2, .h2 {font-weight: normal; text-align: left; line-height: 1.2em;}
 h3, .h3 {font-size: 1.5em; font-weight: normal; text-align: left;}
 #side li.item h3, #side li.item .h3 {font-size: 1.25em;}
 
+#contenu h3.spip {
+	text-transform: uppercase;
+	color: white;
+	width: 75%;
+	text-align: left;
+	padding: 5px 10px 5px 10px;
+	margin-left: -10px;
+	font-size: 1em;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
 #content p, #content ul { 
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -666,10 +688,12 @@ body.page_mot .info-publi a {color:#000;}
 	border-radius: 5px;
 	margin-bottom: 21px;
 }
-
-#carroussel > div.cycle-slideshow > div > div {display: table-cell; padding: 10px; max-width: 33%; width:33%; text-align: left;}
-#carroussel > div.cycle-slideshow > div > div img.spip_logos {max-width: 100%; float:none; box-sizing: border-box; margin: 0; padding:1px;}
+#carroussel > div.cycle-slideshow {display:table; width:100%;}
+#carroussel > div.cycle-slideshow > div {display: table-row;}
+#carroussel > div.cycle-slideshow > div > div {display: table-cell; width:33%; padding: 10px; text-align: left;}
+#carroussel > div.cycle-slideshow > div > div img.spip_logos {width: 100%; float:none; box-sizing: border-box; -moz-box-sizing:border-box; margin: 0; padding:1px; height:auto;}
 #carroussel p {margin:0;}
+.carroussel_rub {color: black; font-size: 1.2em; text-align: center;}
 .carroussel_titre {padding-top: 5px; font-weight: normal;}
 .carroussel_date, .carroussel_intro {color: black; font-weight:normal;}
 .carroussel_intro {font-size: .85em;}

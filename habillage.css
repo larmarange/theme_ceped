@@ -212,7 +212,7 @@ table.spip tr.row_even { background: #EEE; }
 
 body {margin: 0; padding: 0; text-align: justify; background-color: #FFF;}
 
-#bandeau {width:100%; height:75px; background-image: url('img/bandeau_ceped_75.jpg'); background-position: center center;}
+#bandeau {width:100%; height:75px; background-image: url('img/bandeau_ceped.jpg'); background-position: center center;}
 #header {position: relative; width:100%;}
 #content {margin: 0; width:100%;}
 #contenu {display: table-cell; padding: 0 10px; width: 800px; max-width:800px; vertical-align:top;}

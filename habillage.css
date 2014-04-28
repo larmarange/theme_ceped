@@ -130,7 +130,7 @@ img {
 
 
 /* Polices de caracteres */
-h1, h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip, .page_plan #content div.menu > ul > li > a, .carroussel_rub
+h1, h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip, .page_plan #content div.menu > ul > li > a, .carroussel_rub, .font_titre
 	{font-family: 'Exo 2', "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;}
 body {font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;}
 code, .spip_code, .spip_cadre, kbd, samp, var

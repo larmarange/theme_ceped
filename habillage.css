@@ -152,7 +152,7 @@ code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu
 #content .calendriermini .ui-state-highlight a, #content .ui-state-highlight, 
 #content .ui-widget-content .ui-state-highlight, #content .ui-widget-header .ui-state-highlight
 	{border-color: #ae0107;}
-table.spip th, table.spip td {border: 1px solid #ae0107;}
+table.spip th, table.spip td {border: 1px solid #cccccc;}
 
 #barrenav li:hover, li.sfHover, table.spip tr.row_first, #content p.pagination a:hover,
 #content p.pagination strong, #content .formulaire_spip input.submit:hover,

@@ -5,7 +5,7 @@
 * {-webkit-print-color-adjust: exact;}
 
 /* Eléments à ne pas imprimer */
-#spip-admin, #barrenav, #pied, .comment-reply, .repondre, .modererforum {display:none;}
+#spip-admin, #barrenav, #retour_haut, #extra, #pied, .comment-reply, .repondre, .modererforum {display:none;}
 
 /* Layout */
 #header {position: relative; width:100%;}

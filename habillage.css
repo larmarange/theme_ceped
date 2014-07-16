@@ -724,6 +724,10 @@ span.cycle-pager-active {color: #666;}
 	.rdv div.un_rdv {display: block; width:100%;}
 }
 
+/* Publications */
+
+.voir_biblio {text-align: right; padding: 10px 0 10px 0; font-size:0.9em;}
+
 /* Agenda */
 .page_evenement .contenu-principal .surtitre {font-size: 2em;}
 

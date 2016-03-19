@@ -148,10 +148,10 @@ code, .spip_code, .spip_cadre, kbd, samp, var
 h1, .h1, h3 a
 	{color: #B71C1C;}
 #extra a
-	{color: #003D4C;}
+	{color: #B71C1C;}
 a, p.soustitre, a.spip_in, a.spip_out, a.spip_url, a.spip_glossaire,
 code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu legend
-	{color: #2E7D32;}
+	{color: #B71C1C;}
 .lien_titre_invisible h2 a {color: #000;}
 	
 blockquote, blockquote.spip, #content .formulaire_spip input.submit, 
@@ -175,9 +175,9 @@ button:focus,
 a.button:focus,
 select:focus,
 textarea:focus {
-  -webkit-box-shadow: #003D4C 0 0 10px 0;
-  -moz-box-shadow: #003D4C 0 0 10px 0;
-  box-shadow: #003D4C 0 0 10px 0;
+  -webkit-box-shadow: #B71C1C 0 0 10px 0;
+  -moz-box-shadow: #B71C1C 0 0 10px 0;
+  box-shadow: #B71C1C 0 0 10px 0;
   z-index: 1;
 }
 
@@ -203,7 +203,7 @@ input.submit:focus {
 #slogan_site_spip, #pied, #pied a {color: #FFF;}
 
 #header {background-color: #B71C1C;}
-#footer {background-color: #003D4C;}
+#footer {background-color: #B71C1C;}
 #extra, #carroussel,.rdv_date {background-color: #EEE;}
 #extra, #carroussel, .un_rdv {border-color: #DDD;}
 

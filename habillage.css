@@ -136,6 +136,7 @@ body {font-family: 'Open Sans', Calibri, Candara, Segoe, 'Segoe UI', Optima, Ari
 code, .spip_code, .spip_cadre, kbd, samp, var
 	{font-family: "Source Code Pro", "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;}
 
+
 /* Couleurs */
 #header, #content .formulaire_spip input.submit, #content .modererforum button.submit, .comment:hover > .modererforum,
 #content .calendriermini .ui-state-highlight a

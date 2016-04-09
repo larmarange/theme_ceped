@@ -6,7 +6,7 @@ html {
 body {
 	background-color: #fff;
 	color: #000;
-	font-size: 1.3em; /* font-size: 1.4em; /* equiv 14px */
+	font-size: 1.4em; /* font-size: 1.4em; /* equiv 14px */
 	line-height: 1.5; /* adapt to your design */
 }
 
@@ -130,7 +130,7 @@ img {
 
 
 /* Polices de caracteres */
-h1, h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip, .page_plan #content div.menu > ul > li > a, .carroussel_rub, .font_titre
+h2, h3, #nom_site_spip, .page_biblio #contenu h4.h4, #slogan_site_spip, .page_plan #content div.menu > ul > li > a, .carroussel_rub, .font_titre
 	{font-family: 'Open Sans Condensed', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif; font-weight: 700;}
 body {font-family: 'Open Sans', Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;}
 code, .spip_code, .spip_cadre, kbd, samp, var
@@ -141,18 +141,20 @@ code, .spip_code, .spip_cadre, kbd, samp, var
 #header, #content .formulaire_spip input.submit, #content .modererforum button.submit, .comment:hover > .modererforum,
 #content .calendriermini .ui-state-highlight a
 	{background-color: #B71C1C;} 
-#header_barrenav {background-color: #F44336;} 
-#barrenav li:hover, li.sfHover, #barrenav .menu-conteneur > ul > li  ul li:hover, #barrenav .menu-conteneur > ul > li.on {background-color: #B71C1C;} 
+#footer {background-color: #4A148C;}
+#extra {background-color: #F3E5F5; border-color: #CE93D8;}
+#header_barrenav {background-color: #1B5E20;} 
+#barrenav li:hover, li.sfHover, #barrenav .menu-conteneur > ul > li  ul li:hover, #barrenav .menu-conteneur > ul > li.on {background-color: #2E7D32;} 
 #barrenav li:hover > a, #barrenav .menu-conteneur > ul > li > a {color: white;}
 #barrenav .menu-conteneur > ul > li  ul li {background-color: white;}
 
 h1, .h1, h3 a
-	{color: #B71C1C;}
+	{color: #c8102e;}
 #extra a
-	{color: #B71C1C;}
-a, p.soustitre, a.spip_in, a.spip_out, a.spip_url, a.spip_glossaire,
+	{color: #4A148C;}
+a, a.spip_in, a.spip_out, a.spip_url, a.spip_glossaire,
 code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu legend
-	{color: #B71C1C;}
+	{color: #00796B;}
 .lien_titre_invisible h2 a {color: #000;}
 	
 blockquote, blockquote.spip, #content .formulaire_spip input.submit, 
@@ -203,10 +205,8 @@ input.submit:focus {
 #nom_site_spip a {color: #FFF; text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);}
 #slogan_site_spip, #pied, #pied a {color: #FFF;}
 
-#header {background-color: #B71C1C;}
-#footer {background-color: #B71C1C;}
-#extra, #carroussel,.rdv_date {background-color: #EEE;}
-#extra, #carroussel, .un_rdv {border-color: #DDD;}
+#carroussel,.rdv_date {background-color: #EEE;}
+#carroussel, .un_rdv {border-color: #DDD;}
 
 li.sfHover a, #content p.pagination a:hover,
 #content p.pagination strong, #content .formulaire_spip input.submit:hover, #content .modererforum button.submit:hover
@@ -218,21 +218,22 @@ table.spip tr.row_even { background: #EEE; }
 
 body {margin: 0; padding: 0; text-align: justify; background-color: #FFF;}
 
-#bandeau {width:100%; height:75px;}
-#header {position: relative; width:100%;}
-#content {margin: 0; width:100%;}
-#contenu {display: table-cell; padding: 0 10px; width: 800px; max-width:800px; vertical-align:top;}
-#side {display: table-cell; width: 250px; padding: 20px 10px 0 10px; vertical-align:top;}
-#retour_haut {width: 100%; margin: 10px 0 20px 0;}
+#content {margin: 0; width:100%; padding: 80px 0 20px 0;}
+#logo_ceped {float: left; margin-left: -150px;}
+#contenu {display: table-cell; padding: 0 10px 0 0; width: 800px; max-width:800px; vertical-align:top;}
+#side {display: table-cell; width: 200px; padding: 20px 10px 0 10px; vertical-align:top;}
 #extra, #footer {margin:0;}
 #extra {border-top-style: solid; border-top-width: 1px;}
 #extra_content, #pied {max-width: 1000px; margin: 0 auto;}
 
-#entete, #barrenav, #content {max-width: 1000px; margin:auto;}
+#entete, #barrenav, #content {max-width: 1000px; margin-left:auto; margin-right: auto;}
 
 @media only screen and  (max-width: 1000px) {
+	#content {padding: 10px;}
 	#contenu {display: block; width: 100%;}
 	#side {display: block; width: 100%;}
+	#logo_ceped {display: none;}
+	#ceped_nav{padding-left: 10px;}
 }
 
 /* Liens */
@@ -241,23 +242,11 @@ a {text-decoration: none;}
 a:hover {text-decoration: underline;}
 
 /* Header */
-
-#entete {padding: 5px 10px 5px 10px; text-align: left;}
-#entete img {padding: 0px; background-color: transparent; border: none; margin: 10px 15px 5px 0;}
-#nom_site_spip {display: none;}
-#slogan_site_spip {display: none;}
-
-#header_barrenav #formulaire_menu_lang {padding: 10px;}
-#header_barrenav #formulaire_menu_lang label {color: #FFF; font-weight: normal; display: none;}
-#header_barrenav #formulaire_menu_lang select {height: auto; width: 100%; color: #888;} 
-
-#barrenav {clear: both; font-size: 1em; letter-spacing: -0.03em}
+#barrenav {clear: both; font-size: 1em; letter-spacing: -0.03em; min-height: 60px;}
+#ceped_nav {float:left; margin-top: 18px;}
 
 @media only screen and  (max-width: 550px) {
-	#entete {text-align:center;}
-	#entete img {float: none; max-height: 100px; width: auto;}
 	.contenu-principal .cartouche .spip_logos {max-width: 25%;}
-	#nom_site_spip, #slogan_site_spip {margin-left:0;}
 }
 
 /* Menu barrenav + recherche */
@@ -279,6 +268,8 @@ a:hover {text-decoration: underline;}
 #barrenav ul {list-style: none; padding: 0; margin: 0;}
 #barrenav ul li {margin: 0; color: #FFF;  text-align: left;}
 
+#barrenav div.menu-conteneur > ul.menu-liste > li {text-transform: uppercase; letter-spacing: 1px; }
+#barrenav div.menu-conteneur > ul.menu-liste > li li {text-transform: none; letter-spacing: 0; }
 #barrenav div.menu-conteneur > ul.menu-liste > li a {display: block;}
 #barrenav div.menu-conteneur > ul.menu-liste > li a:hover {display: block; text-decoration: none;}
 
@@ -346,20 +337,14 @@ a:hover {text-decoration: underline;}
 
 
 @media only screen and  (min-width: 1000px) {
-	#header_barrenav #formulaire_menu_lang {text-align: right; width: 1000px; max-width: 100%; margin: 0 auto; position:absolute;}
-	#header_barrenav #formulaire_menu_lang select {display: inline-block; width: 180px; position:relative; top:-45px;}
-	#header_barrenav #formulaire_menu_lang p.boutons {display:inline-block; position: relative; top:-60px;}
-	#formulaire_recherche {width: 1000px; max-width: 100%; margin: 0 auto; position:absolute; text-align:right;}
-	#formulaire_recherche input {border-bottom: none; display: inline-block; width:180px; position: relative;}
-	#barrenav div.menu-conteneur {margin-right: 200px;}
-	
-	
-	
+	#header_barrenav {position: fixed; width: 100%; z-index: 99999;}
+
 	.nojs #barrenav div.menu-conteneur {position:relative; z-index:9999;}
 	.nojs #barrenav div.menu-conteneur > ul.menu-liste > li > ul {display: none;}
 	.nojs #barrenav div.menu-conteneur > ul.menu-liste > li:hover > ul {display: block; position: absolute;}
 
-	#barrenav div.menu-conteneur > ul.sf-js-enabled > li {width:auto; height: 49px; padding-top: 15px; padding-left: 5px;}
+	#barrenav div.menu-conteneur > ul.sf-js-enabled {text-align: right;}
+	#barrenav div.menu-conteneur > ul.sf-js-enabled > li {width:auto; height: 60px; padding-top: 20px; padding-left: 5px;}
 	#barrenav div.menu-conteneur > ul.sf-js-enabled > li > a > .sf-sub-indicator {
 		-webkit-transform: rotate(90deg);
 		-moz-transform: rotate(90deg);
@@ -370,9 +355,10 @@ a:hover {text-decoration: underline;}
 	#barrenav div.menu-conteneur > ul.menu-liste > li > a.sf-with-ul {padding-right: 30px;}
 	#barrenav div.menu-conteneur > ul.sf-js-enabled > li.sfHover > ul {
 		left: 0;
-		top: 49px;
-		border: solid 1px #cccccc;
-		border:1px solid rgba(0,0,0,0.15);
+		top: 59px;
+	}
+	#barrenav div.menu-conteneur > ul.menu-liste > li ul {
+		border: 1px solid rgba(0,0,0,0.15);
 		border-radius:4px;
 		-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);
 		box-shadow:0 6px 12px rgba(0,0,0,0.175);
@@ -381,10 +367,11 @@ a:hover {text-decoration: underline;}
 
 @media only screen and  (max-width: 1000px) {
 	.sf-sub-indicator {display: none;}
+	#barrenav div.menu-conteneur > ul {padding-top: 60px;}
 	#barrenav ul, #barrenav li  {display: block;}
 	#label-toggle-barrenav {
 		position: absolute;
-		top: 20px; right: 20px;
+		top: 5px; right: 5px;
 		z-index: 1337;
 		width: 38px;
 		height: 40px;
@@ -445,8 +432,17 @@ ul.menu-liste [class^="menu-"] > a:before, ul.menu-liste  [class*=" menu-"] > a:
 }
 
 /* Contenu */
-h1, .h1 {font-size: 2.5em; margin: 10px 0; text-align: left; line-height: 110%;}
-h2, .h2 {text-align: left; line-height: 1.2em;}
+
+p#hierarchie {margin: 0 0 10px 0; color: #BBB; text-align:left; display:none;}
+p#hierarchie a {color: #BBB;}
+.cartouche {margin-bottom: 30px;}
+
+h1, .h1 {font-size: 2.5em; margin: 0; text-align: left; line-height: 110%;}
+p.surtitre {margin: 0 0 10px 0; font-size: 2em;}
+p.soustitre {margin: 15px 0 0 0; font-style: italic; font-size: 1.25em;}
+
+
+h2, .h2 {text-align: left; line-height: 1.2em; margin-top: 0;}
 h3, .h3 {font-size: 1.5em; text-align: left;}
 #side li.item h3, #side li.item .h3 {font-size: 1.25em;}
 
@@ -463,13 +459,8 @@ h3, .h3 {font-size: 1.5em; text-align: left;}
 
 img.spip_logos {float: right; background-color: white; padding: 10px; border: solid 1px #DDD; margin-left: 10px;}
 .contenu-principal img.spip_logos {padding: 0; border: none; margin-left: 25px;}
-.contenu-principal > div {clear: both;}
 
-p#hierarchie {margin: 10px 0; color: #BBB; text-align:left;}
-p#hierarchie a {color: #BBB;}
 
-p.surtitre {margin: 10px 0; font-weight: bold; font-size: 1.5em;}
-p.soustitre {margin: 10px 0; font-style: italic; font-size: 1.5em;}
 
 .chapo p, .ps p, #descriptif_site_spip {font-weight: bold; color: #666;}
 .notes div {padding-left: 30px;  text-align: justify;}

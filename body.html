@@ -14,7 +14,11 @@
 		</div>
 	</div>
 </div>
-<br style="clear: both;"/>
+<BOUCLE_accueil(CONDITION){si #ENV{composition}|=={sommaire}|et{#ENV{type}|=={page}}}>
+<div id="bandeau_accueil">
+	<div id="descriptif_site">#DESCRIPTIF_SITE_SPIP</div>
+</div>
+</BOUCLE_accueil>
 
 <div id="content">
 	<div id="contenu">
@@ -24,9 +28,6 @@
 		<div id="navigation">
 			<INCLURE{fond=navigation/#ENV{type},env}>
 		</div>
-	</div>
-	<div id="retour_haut">
-		<a href="#" title="<:theme_larma:retour_haut_page:>"><img src="#CHEMIN{img/arrow.png}" alt="<:theme_larma:retour_haut_page:>"></a>
 	</div>
 </div>
 <div id="extra">
@@ -53,5 +54,12 @@
         jQuery("#formulaire_menu_lang").prependTo("#toggle-div");
 		if (jQuery("#extra_content div").length==0) jQuery("#extra").remove();
     }); 
+	jQuery(window).scroll(function(event){
+		if(jQuery("body").scrollTop() > 125)
+			jQuery("#header_barrenav").addClass("nav_fixed");
+		else
+			jQuery("#header_barrenav").removeClass("nav_fixed");
+	});
+
 /* ]]> */</script>
 </div>

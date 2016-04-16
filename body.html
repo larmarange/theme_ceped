@@ -55,10 +55,13 @@
 		if (jQuery("#extra_content div").length==0) jQuery("#extra").remove();
     }); 
 	jQuery(window).scroll(function(event){
-		if(jQuery("body").scrollTop() > 125)
+		if(jQuery("body").scrollTop() > 125) {
 			jQuery("#header_barrenav").addClass("nav_fixed");
-		else
+			jQuery("#header").addClass("header_margin");
+		} else {
 			jQuery("#header_barrenav").removeClass("nav_fixed");
+			jQuery("#header").removeClass("header_margin");
+		}
 	});
 
 /* ]]> */</script>

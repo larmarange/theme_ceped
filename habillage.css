@@ -303,7 +303,7 @@ a:hover {text-decoration: underline;}
 #barrenav div.menu-conteneur > ul.menu-liste > li > a {padding: 5px 5px 5px 5px;}
 #barrenav div.menu-conteneur > ul.menu-liste li ul {padding:0; margin:0;}
 #barrenav div.menu-conteneur > ul.menu-liste li ul a {padding: 5px 5px 5px 20px; color: #666;}
-#barrenav div.menu-conteneur > ul.menu-liste li ul a:hover {color: white;}
+#barrenav div.menu-conteneur > ul.menu-liste li ul a:hover, #barrenav div.menu-conteneur > ul.menu-liste li ul li.sfHover > a {color: white;}
 #barrenav div.menu-conteneur > ul.menu-liste li ul ul a {padding: 5px 5px 5px 40px;}
 #barrenav div.menu-conteneur > ul.menu-liste li ul ul ul a {padding: 5px 5px 5px 60px;}
 #barrenav div.menu-conteneur > ul.menu-liste li ul ul ul ul a {padding: 5px 5px 5px 80px;}

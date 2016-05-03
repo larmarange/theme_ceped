@@ -140,7 +140,7 @@ code, .spip_code, .spip_cadre, kbd, samp, var
 /* Couleurs */
 #content .formulaire_spip input.submit, #content .modererforum button.submit, .comment:hover > .modererforum,
 #content .calendriermini .ui-state-highlight a
-	{background-color: #B71C1C;} 
+	{background-color: #00796B;} 
 #header_barrenav, p#hierarchie {background-color: #00695C;} 
 #barrenav li:hover, li.sfHover, #barrenav .menu-conteneur > ul > li  ul li:hover, #barrenav .menu-conteneur > ul > li.on {background-color: #00796B;} 
 #barrenav li:hover > a, #barrenav .menu-conteneur > ul > li > a, p#hierarchie, p#hierarchie a {color: white;}
@@ -169,14 +169,14 @@ blockquote, blockquote.spip, #content .formulaire_spip input.submit,
 #content .modererforum button.submit, .formulaire_spip fieldset.previsu, 
 #content .calendriermini .ui-state-highlight a, #content .ui-state-highlight, 
 #content .ui-widget-content .ui-state-highlight, #content .ui-widget-header .ui-state-highlight
-	{border-color: #B71C1C;}
+	{border-color: #00695C;}
 table.spip th, table.spip td {border: 1px solid #cccccc;}
 
 table.spip tr.row_first, #content p.pagination a:hover,
 #content p.pagination strong, #content .formulaire_spip input.submit:hover,
 #content .modererforum button.submit:hover, .me > .comment > .comment-content,
 #content .calendriermini .ui-state-highlight a:hover
-	{background-color: #F44336;}
+	{background-color: #00695C; color: white;}
 
 
 .info-publi {color: #A98D76;}

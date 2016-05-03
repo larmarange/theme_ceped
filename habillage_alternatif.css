@@ -138,31 +138,24 @@ code, .spip_code, .spip_cadre, kbd, samp, var
 
 
 /* Couleurs */
-#content .formulaire_spip input.submit, #content .modererforum button.submit, .comment:hover > .modererforum,
+#header_barrenav, #content .formulaire_spip input.submit, #content .modererforum button.submit, .comment:hover > .modererforum,
 #content .calendriermini .ui-state-highlight a, #bandeau_accueil
 	{background-color: #B71C1C;} 
-#header_barrenav {background-color: #00695C;} 
-#barrenav li:hover, li.sfHover, #barrenav .menu-conteneur > ul > li  ul li:hover, #barrenav .menu-conteneur > ul > li.on {background-color: #00796B;} 
+#barrenav li:hover, li.sfHover, #barrenav .menu-conteneur > ul > li  ul li:hover, #barrenav .menu-conteneur > ul > li.on {background-color: #F44336;} 
 #barrenav li:hover > a, #barrenav .menu-conteneur > ul > li > a {color: white;}
 #barrenav .menu-conteneur > ul > li  ul li {background-color: white;}
 
-#descriptif_site strong {color: #C8102E;}
-
-#header {background-color: #FFF; border-bottom: solid 1px #DDD;}
 #footer {background-color: #B71C1C;}
-#extra, #carroussel,.rdv_date {background-color: #F4F4F4;}
+#header, #extra, #carroussel,.rdv_date {background-color: #EEE;}
 #extra, #carroussel, .un_rdv {border-color: #DDD;}
 
-body{background-color: #F4F4F4;}
-#content {background-color: white; margin: 20px auto; padding: 20px; border: solid 1px #DDD;}
-
-h3 a
+h1, .h1, h3 a
 	{color: #B71C1C;}
 #extra a
 	{color: #B71C1C;}
 a, p.soustitre, a.spip_in, a.spip_out, a.spip_url, a.spip_glossaire,
 code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu legend
-	{color: #009688;}
+	{color: #73A3A5;}
 .lien_titre_invisible h2 a {color: #000;}
 	
 blockquote, blockquote.spip, #content .formulaire_spip input.submit, 
@@ -213,17 +206,15 @@ input.submit:focus {
 #nom_site_spip a {color: #FFF; text-shadow: 1px 2px 3px rgba(0,0,0, 0.5);}
 #slogan_site_spip, #pied, #pied a {color: #FFF;}
 
-
-
 #content p.pagination a:hover,
 table.spip tr.row_odd { background: #FFF; }
 table.spip tr.row_even { background: #EEE; }
 
 /* Layout  */
 
-body {margin: 0; padding: 0; text-align: justify;}
+body {margin: 0; padding: 0; text-align: justify; background-color: #FFF;}
 
-#entete, #barrenav, #content, #descriptif_site {max-width: 1000px; margin-left:auto; margin-right: auto;}
+#entete, #barrenav, #content, #descriptif_site {max-width: 1000px; margin:auto;}
 #header {width:100%;}
 #content {width:100%;}
 #contenu {display: table-cell; padding: 0 10px; width: 800px; max-width:800px; vertical-align:top;}
@@ -233,8 +224,8 @@ body {margin: 0; padding: 0; text-align: justify;}
 #extra {border-top-style: solid; border-top-width: 1px;}
 #extra_content, #pied {max-width: 1000px; margin: 0 auto;}
 
-.page_sommaire #contenu, .page_rubrique #contenu, .no_side #contenu {width: 1000px; max-width: 1000px;}
-.page_sommaire #side , .page_rubrique #side, .no_side #side {display: none;}
+.page_sommaire #contenu, .page_rubrique #contenu {width: 1000px; max-width: 1000px;}
+.page_sommaire #side , .page_rubrique #side {display: none;}
 
 .page_sommaire #contenu {padding-top: 20px;}
 
@@ -242,7 +233,6 @@ body {margin: 0; padding: 0; text-align: justify;}
 @media only screen and  (max-width: 1000px) {
 	#contenu, .page_sommaire #contenu, .page_rubrique #contenu {display: block; width: 100%;}
 	#side {display: block; width: 100%;}
-	#content {border: none; margin: 0;}
 }
 
 /* Liens */
@@ -253,7 +243,7 @@ a:hover {text-decoration: underline;}
 /* Header */
 
 #entete {padding: 5px 10px 5px 10px; text-align: left;}
-#entete img {padding: 0px; background-color: transparent; border: none; margin: 10px 15px 5px 0; max-width: 80%;}
+#entete img {padding: 0px; background-color: transparent; border: none; margin: 10px 15px 5px 0;}
 #nom_site_spip {display: none;}
 #slogan_site_spip {display: none;}
 
@@ -264,6 +254,7 @@ a:hover {text-decoration: underline;}
 #barrenav {clear: both; font-size: 1em; letter-spacing: -0.03em}
 
 @media only screen and  (max-width: 550px) {
+	#entete {text-align:center;}
 	#entete img {float: none; max-height: 100px; width: auto;}
 	.contenu-principal .cartouche .spip_logos {max-width: 25%;}
 	#nom_site_spip, #slogan_site_spip {margin-left:0;}
@@ -477,7 +468,7 @@ ul.menu-liste [class^="menu-"] > a:before, ul.menu-liste  [class*=" menu-"] > a:
 }
 
 /* Contenu */
-h1, .h1 {font-size: 3.5em; margin: 10px 0; text-align: left; line-height: 110%;}
+h1, .h1 {font-size: 2.5em; margin: 10px 0; text-align: left; line-height: 110%;}
 h2, .h2 {text-align: left; line-height: 1.2em;}
 h3, .h3 {font-size: 1.5em; text-align: left;}
 #side li.item h3, #side li.item .h3 {font-size: 1.25em;}
@@ -496,10 +487,8 @@ h3, .h3 {font-size: 1.5em; text-align: left;}
 img.spip_logos {float: right; background-color: white; padding: 10px; border: solid 1px #DDD; margin-left: 10px;}
 .contenu-principal img.spip_logos {padding: 0; border: none; margin-left: 25px;}
 
-p#hierarchie {margin: 10px 0; color: #AAA; text-align:left;}
-p#hierarchie a {color: #AAA;}
-
-#content > p#hierarchie {margin: -20px -20px 20px -20px; border-bottom: solid 1px #DDD; padding: 10px;}
+p#hierarchie {margin: 10px 0; color: #BBB; text-align:left;}
+p#hierarchie a {color: #BBB;}
 
 p.surtitre {margin: 10px 0; font-weight: bold; font-size: 1.5em;}
 p.soustitre {margin: 10px 0; font-style: italic; font-size: 1.5em;}
@@ -659,10 +648,11 @@ body.page_mot .info-publi a {color:#000;}
 
 /* Carroussel Actus */
 #carroussel {
-	margin: 0 -30px 20px -30px;
-	border: none;
-	background-color: white;
-	padding: 20px;
+	border-style: solid; border-width: 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom: 21px;
 }
 #carroussel > div.cycle-slideshow {display:table; width:100%;}
 #carroussel > div.cycle-slideshow > div {display: table-row;}
@@ -683,10 +673,6 @@ span.cycle-pager-active {color: #666;}
 	#carroussel > div.cycle-slideshow > div > div {display: block; width:100%; max-width:100%;}
 }
 
-.page_sommaire #carroussel {
-	margin-top: -40px;
-	border-bottom: solid 1px #DDD;
-}
 
 /* Rendez-vous */
 

@@ -14,14 +14,12 @@
 		</div>
 	</div>
 </div>
-<BOUCLE_accueil(CONDITION){si #ENV{composition}|=={sommaire}|et{#ENV{type}|=={page}}}>
-<div id="bandeau_accueil">
-	<div id="descriptif_site">#DESCRIPTIF_SITE_SPIP</div>
-</div>
-</BOUCLE_accueil>
 
 <div id="content">
 	<div id="contenu">
+		<BOUCLE_accueil(CONDITION){si #ENV{composition}|=={sommaire}|et{#ENV{type}|=={page}}}>
+			<h1 id="descriptif_site">#DESCRIPTIF_SITE_SPIP</h1>
+		</BOUCLE_accueil>
 		<INCLURE{fond=contenu/#ENV{type},env}>
 	</div>
 	<div id="side">
@@ -29,6 +27,7 @@
 			<INCLURE{fond=navigation/#ENV{type},env}>
 		</div>
 	</div>
+	<hr style="clear:both; border: none;" />
 </div>
 <div id="extra">
 	<div id="extra_content">
@@ -52,7 +51,7 @@
         jQuery("#barrenav div.menu-conteneur > ul.menu-liste").superfish({delay:800}); 
         jQuery("#formulaire_recherche input#recherche").attr('placeholder',"<:info_rechercher:>");
         jQuery("#formulaire_menu_lang").prependTo("#toggle-div");
-		jQuery("#hierarchie").prependTo("#content");
+		//jQuery("#hierarchie").prependTo("#content");
 		if (jQuery("#extra_content div").length==0) jQuery("#extra").remove();
 		if (jQuery("#navigation div").length==0) jQuery("body").addClass("no_side");
     }); 

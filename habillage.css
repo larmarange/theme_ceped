@@ -729,12 +729,12 @@ span.cycle-pager-active {color: #666;}
   margin-left: .2em;
 }
 
-#content div.noisette_article-mots_cles li.item {display:block; width: 33%; min-height:2em; float:left; clear:none; padding-right:5px; }
-#content div.noisette_article-mots_cles li.item  li.item[float="left"] + li.item {float:none;}
+#contenu div.noisette_article-mots_cles li.item {display:block; width: 33%; min-height:2em; float:left; clear:none; padding-right:5px; }
+#contenu div.noisette_article-mots_cles li.item  li.item[float="left"] + li.item {float:none;}
 @media only screen and  (max-width: 700px) {
-	#content div.noisette_article-mots_cles li.item  {width: 49%;}
+	#contenu div.noisette_article-mots_cles li.item  {width: 49%;}
 }
-#content div.noisette_article-mots_cles:after {clear: both;}
+#contenu div.noisette_article-mots_cles:after {clear: both;}
 
 /* Plan du site */
 

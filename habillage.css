@@ -149,7 +149,7 @@ code, .spip_code, .spip_cadre, kbd, samp, var
 #descriptif_site strong {color: #C8102E;}
 
 #header {background-color: #FFF; border-bottom: solid 1px #DDD;}
-#footer {background-color: #B71C1C;}
+#footer {background-color: #00695C;}
 #extra, #carroussel,.rdv_date {background-color: #F4F4F4;}
 #extra, #carroussel, .un_rdv {border-color: #DDD;}
 
@@ -157,9 +157,9 @@ body{background-color: #F4F4F4;}
 #content {background-color: white; margin: 20px auto; padding: 20px; border: solid 1px #DDD;}
 
 h3 a
-	{color: #B71C1C;}
+	{color: #C8102E;}
 #extra a
-	{color: #B71C1C;}
+	{color: #00695C;}
 a, p.soustitre, a.spip_in, a.spip_out, a.spip_url, a.spip_glossaire,
 code, .spip_code, .spip_cadre, kbd, samp, var, .formulaire_spip fieldset.previsu legend
 	{color: #009688;}
@@ -461,7 +461,7 @@ ul.menu-liste [class^="menu-"] > a:before, ul.menu-liste  [class*=" menu-"] > a:
 }
 
 /* Contenu */
-h1, .h1 {font-size: 3.5em; margin: 10px 0; text-align: left; line-height: 110%;}
+h1, .h1 {font-size: 3em; margin: 10px 0; text-align: left; line-height: 110%;}
 h2, .h2 {text-align: left; line-height: 1.2em;}
 h3, .h3 {font-size: 1.5em; text-align: left;}
 #side li.item h3, #side li.item .h3 {font-size: 1.25em;}

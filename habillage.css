@@ -186,16 +186,16 @@ button:focus,
 a.button:focus,
 select:focus,
 textarea:focus {
-  -webkit-box-shadow: #B71C1C 0 0 10px 0;
-  -moz-box-shadow: #B71C1C 0 0 10px 0;
-  box-shadow: #B71C1C 0 0 10px 0;
+  -webkit-box-shadow: #00695C 0 0 10px 0;
+  -moz-box-shadow: #00695C 0 0 10px 0;
+  box-shadow: #00695C 0 0 10px 0;
   z-index: 1;
 }
 
 input.submit:focus {
-  -webkit-box-shadow: #B71C1C 0 0 10px 0;
-  -moz-box-shadow: #B71C1C 0 0 10px 0;
-  box-shadow: #B71C1C 0 0 10px 0;
+  -webkit-box-shadow: #00695C 0 0 10px 0;
+  -moz-box-shadow: #00695C 0 0 10px 0;
+  box-shadow: #00695C 0 0 10px 0;
   z-index: 1;
 }
 

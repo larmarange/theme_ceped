@@ -53,7 +53,7 @@
         jQuery("#formulaire_menu_lang").prependTo("#toggle-div");
 		//jQuery("#hierarchie").prependTo("#content");
 		if (jQuery("#extra_content div").length==0) jQuery("#extra").remove();
-		if (jQuery("#navigation div").length==0) jQuery("body").addClass("no_side");
+		if (jQuery("#navigation div").length==0 & jQuery("#navigation h2").length==0) jQuery("body").addClass("no_side");
     }); 
 	// http://stackoverflow.com/questions/8149155/animate-scrolltop-not-working-in-firefox
 	// Note that the DOM needs to be loaded first, 
